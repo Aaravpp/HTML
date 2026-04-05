@@ -4,46 +4,46 @@
         <title>User Information</title>
     </head>
     <body>
-        <h1 style="text-align: center;">Registration</h1>
-        <br><br>
         <form>
-            <label>Full Name:</label>
-            <input type="text">
+            <h1 style="text-align: center;">Registration</h1>
             <br><br>
-            <label>Age:</label>
-            <input type="number">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="Name">
             <br><br>
-            <label>Email:</label>
-            <input type="email">
+            <label for="age">Age:</label>
+            <input type="number" name="Age" id="age" min="1" max="120">
             <br><br>
-            <label>Gender:</label><br>
-            <input type="radio" name="Gender">
-            <label>Male</label>
-            <input type="radio" name="Gender">
-            <label>Female</label>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Email">
             <br><br>
-            <label>Qualification</label>
-            <select>
+            <label for="gender">Gender:</label><br>
+            <input type="radio" name="Gender" id="male" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" name="Gender" id="female" value="Female">
+            <label for="female">Female</label>
+            <br><br>
+            <label for="qualification">Qualification</label>
+            <select id="qualification" name="Qualification">
                 <option>Choose..</option>
-                <option>10</option>
-                <option>+2</option>
-                <option>Ug</option>
-                <option>Pg</option>
+                <option value="10">10</option>
+                <option value="+2">+2</option>
+                <option value="Ug">Ug</option>
+                <option value="Pg">Pg</option>
             </select>
             <br><br>
-            <label>Skills:</label>
+            <label for="skills">Skills:</label>
             <br>
-            <input type="checkbox">
-            <label>HTML</label>
+            <input type="checkbox" id="HTML" name="Skills" value="HTML">
+            <label for="HTML">HTML</label>
             <br>
-            <input type="checkbox">
-            <label>CSS</label>
+            <input type="checkbox" id="CSS" name="Skills" value="CSS">
+            <label for="CSS">CSS</label>
             <br>
-            <input type="checkbox">
-            <label>JavaScript</label>
+            <input type="checkbox" id="js" name="Skills" value="JavaScript">
+            <label for="js">JavaScript</label>
             <br>
-            <input type="checkbox">
-            <label>Bootstrap</label>
+            <input type="checkbox" id="bootstrap" name="Skills" value="bootstrap">
+            <label for="bootstrap">Bootstrap</label>
             <br><br><br>
             <input type="submit" value="submit">
         </form>
